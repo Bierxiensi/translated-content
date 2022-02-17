@@ -35,7 +35,7 @@ valueIsNaN(1);          // false
 valueIsNaN(NaN);        // true
 valueIsNaN(Number.NaN); // true</pre>
 
-<p>但是，请注意isNaN（）和Number.isNaN（）之间的区别：如果当前值是NaN，或者将其强制转换为数字后将是NaN，则前者将返回true。而后者仅当值当前为NaN时才为true：</p>
+<p>但是，请注意isNaN（）和Number.isNaN（）之间的区别：如果当前值是NaN，或者将其强制转换为数字后将是NaN，则前者将返回true。而后者仅在当前值为NaN时才为true：</p>
 
 <pre><code>isNaN('hello world');        // true
 Number.isNaN('hello world'); // false</code></pre>
